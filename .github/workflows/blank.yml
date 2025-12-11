@@ -1,0 +1,21 @@
+run-name: Kishra_pipline
+on: workflow_dispatch
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  build_job:
+    name: build
+    runs-on: self_hosted
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v6.0.1
+    - name: Azure login
+      uses: azure/login@v2
+      with:
+        client-id: 6da713d7-8a68-450e-9d85-ef5eef7c7e4b
+        tenant-id: 5bb66004-782c-4c37-9c7d-578c7714c94f
+        subscription-id: 0fed9206-7606-41d6-bea8-83033d2b432f
+        
+     
+    

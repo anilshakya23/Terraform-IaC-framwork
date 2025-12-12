@@ -1,4 +1,4 @@
-run-name: Kishra_pipline
+run-name: Terraform-IaC-framwork
 on: workflow_dispatch
 permissions:
   id-token: write
